@@ -19,8 +19,8 @@ import {
   WalletDropdownDisconnect,
 } from "@coinbase/onchainkit/wallet";
 import { useEffect, useMemo, useState, useCallback } from "react";
-import { Button } from "./components/DemoComponents";
-import { Icon } from "./components/DemoComponents";
+import { Button } from "./components/Components";
+import { Icon } from "./components/Components";
 import { Home } from "./components/Components";
 import { ConfirmNumber } from "./components/Components";
 import { AddNumber } from "./components/Components"
@@ -31,7 +31,6 @@ export default function App() {
   const [activeTab, setActiveTab] = useState("home");
 
   const addFrame = useAddFrame();
-  const openUrl = useOpenUrl();
 
   useEffect(() => {
     if (!isFrameReady) {
