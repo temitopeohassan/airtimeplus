@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "africastalking": "^0.7.3"
+    "africastalking": "^0.7.3",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0"
   }
 }

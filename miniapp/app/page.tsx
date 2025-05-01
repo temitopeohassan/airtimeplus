@@ -21,8 +21,9 @@ import {
 import { useEffect, useMemo, useState, useCallback } from "react";
 import { Button } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
-import { Home } from "./components/DemoComponents";
-import { Features } from "./components/DemoComponents";
+import { Home } from "./components/Components";
+import { ConfirmNumber } from "./components/Components";
+import { AddNumber } from "./components/Components"
 
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
@@ -97,18 +98,12 @@ export default function App() {
 
         <main className="flex-1">
           {activeTab === "home" && <Home setActiveTab={setActiveTab} />}
-          {activeTab === "features" && <Features setActiveTab={setActiveTab} />}
+          {activeTab === "confirm number" && <ConfirmNumber setActiveTab={setActiveTab} />}
+          {activeTab === "add number" && <AddNumber setActiveTab={setActiveTab} />}
         </main>
 
         <footer className="mt-2 pt-4 flex justify-center">
-          <Button
-            variant="ghost"
-            size="sm"
-            className="text-[var(--ock-text-foreground-muted)] text-xs"
-            onClick={() => openUrl("https://base.org/builders/minikit")}
-          >
-            Built on Base with MiniKit
-          </Button>
+          AirtimePlus
         </footer>
       </div>
     </div>
